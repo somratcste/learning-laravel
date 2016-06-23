@@ -13,4 +13,16 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/great/{name?}', function ($name = null) {
+	return view('actions.great' , ['name' => $name]);
+})->name('great');
+
+Route::get('/good', function () {
+	return view('actions.good');
+})->name('good');
+
+Route::get('/best', function () {
+	return view('actions.best');
+})->name('best');

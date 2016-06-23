@@ -7,7 +7,9 @@
 	</head>
 	<body>
 		<div class="container">
-			@include('includes.header')
+			<div class="row">
+				@include('includes.header')
+			</div>
 			<div class="row">
 				@yield('content')
 			</div>

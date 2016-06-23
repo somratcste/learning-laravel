@@ -1,11 +1,6 @@
 @extends('layouts.master')
 @section('content')
-	<p>Computer Science and Telecommunication Engineering. Noakhali Science and Technology University. Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.Computer Science and Telecommunication Engineering. Noakhali Science and Technology University.</p>
-	<ul>
-		@for($i=0; $i<5; $i++)
-			@if($i % 2 ==0)
-			<li>Iteration{{$i+1}}</li>
-			@endif
-		@endfor
-	</ul>
+	<a href="{{ route('great') }}">Great</a>
+	<a href="{{ route('good') }}">Good</a>
+	<a href="{{ route('best') }}">Best</a>
 @endsection
