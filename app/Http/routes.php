@@ -36,5 +36,6 @@ Route::group(['prefix' => 'do'] , function() {
 		}
 		return redirect()-back();
 	})->name('benice');
+	
 });
 
