@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('content')	
 	<center>
-	<a href="{{ route('great') }}">Great</a>
-	<a href="{{ route('good') }}">Good</a>
-	<a href="{{ route('best') }}">Best</a>
+	<a href="{{ route('niceaction' , ['action' => 'great']) }}">Great</a>
+	<a href="{{ route('niceaction' , ['action' => 'good']) }}">Good</a>
+	<a href="{{ route('niceaction' , ['action' => 'best']) }}">Best</a>
 	</center>
 	<br />
 	<form action="{{ route('benice') }}" method="post">
