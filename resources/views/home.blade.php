@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('content')	
 	<center>
-	<a href="{{ route('niceaction' , ['action' => 'great']) }}">Great</a>
-	<a href="{{ route('niceaction' , ['action' => 'good']) }}">Good</a>
-	<a href="{{ route('niceaction' , ['action' => 'best']) }}">Best</a>
+	@foreach ($actions as $action)
+		<a href="{{ route('niceaction', ['action' => lcfirst($action->name)]) }}">{{$action->name}}</a>
+	@endforeach
 	</center>
 	<br />
 	@if(count($errors) > 0)
