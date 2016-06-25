@@ -15,23 +15,19 @@
 			</ul>
 		</div>
 	@endif
-	<form action="{{ route('benice') }}" method="post">
+	<form action="{{ route('add_action') }}" method="post">
 	<div class="row">
 		<div class="col-md-6">
 			<div class="col-md-3">
-				<label for="select-action">You are .... </label>
+				<label for="select-action">Name of Actions : </label>
 			</div>
 			<div class="col-md-9">
-				<select class="form-control" id="select-action" name="action">
-					<option >Select menu</option>
-					<option value="great">Great</option>
-					<option value="good">Good</option>
-					<option value="best">Best</option>
-				</select>
+				<input type="text" name="name" class="form-control" id="inputEmail3" placeholder="UserName">
+				
 			</div>
 		</div>
 		<div class="col-md-3">		
-			<input type="text" name="name" class="form-control" id="inputEmail3" placeholder="UserName">
+			<input type="text" name="niceness" class="form-control" id="inputEmail3" placeholder="Number">
 		</div>
 		<div class="col-md-3">
 			<input type="submit" class="btn btn-primary" value="Submit"></input>

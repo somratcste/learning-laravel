@@ -27,9 +27,9 @@ Route::group(['middleware' => ['web']] , function() {
 		]);
 
 
-		Route::post('/' , [
-			'uses' => 'NiceActionController@postNiceAction',
-			'as' => 'benice'
+		Route::post('/add_action' , [
+			'uses' => 'NiceActionController@postInsertNiceAction',
+			'as' => 'add_action'
 		]);
 		
 	});
