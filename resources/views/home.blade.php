@@ -35,4 +35,14 @@
 		</div>
 	</div>
 	</form>
+	<br><br><br>
+	<div class="row">
+		<center>
+			<ul>
+				@foreach ($logged_actions as $logged_action)
+					<li>{{$logged_action->nice_action->name}}</li>
+				@endforeach
+			</ul>
+		</center>
+	</div>
 @endsection
